@@ -13,8 +13,7 @@ func main() {
 
     for i := range size {
         for j := range size {
-            j += i
-            if j%2 == 0 {
+            if (j+i)%2 == 0 {
                 fmt.Printf("#")
             } else {
                 fmt.Printf(" ")
